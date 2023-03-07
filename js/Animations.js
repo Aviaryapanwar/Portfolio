@@ -21,7 +21,7 @@ function NextPage() {
     element.style.marginLeft = "200px";
     const element2 = document.getElementById("Projects-container");
     element2.style.transition="all 1s ease";
-    element2.style.right="8px";
+    element2.style.right="16px";
     showme();
 }
 function PreviousPage() {
