@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/A-Logo.ico" sizes="32x32" type="image/png">
+
+
+  <script src="js/Animations.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portfolio</title>
+</head>
+
+<body class="bg-dark ">
+
+  <div class="navbar-container">
+    <nav class="navbar bg-soliddark filter-blur">
+      <!-- Navbar Brand-->
+      <img class="navbar-item" src="images/A-Logo.png" alt="">
+      <a style="padding-right:10%;border:2px solid;border-width: 0px 1px 0px 0px; margin-right: 5%;" href="#"
+        class="text-white"><span style="color: rgb(255, 0, 102); font-weight: bolder;">Avi </span><span style="color: rgb(255, 0, 102); "> arya <span style="color: rgb(255, 136, 0); ">Panwar</span></a>
+      <!--Navbar Links-->
+      <div class="navbar-item"><a href="Pages/MySkills.html" class="text-white "><span style ="font-weight: 900;">My Skills</span></a></div>
+      <a href="Pages/Projects.html" class="text-white navbar-item">Projects</a>
+      <a href="Pages/ContactMe.html" class="text-white navbar-item">Contact Me</a>
+      <a href="Pages/AboutMe.html" class="text-white navbar-item">About Me</a>
+      <img class="music-button" src="images/Music.png" alt="" onclick="PlaySound()">
+    </nav>
+  </div>
+
+  <div id="profile" onmousedown="showme()" onclick="NextPage()">
+    <img class="profile-pic" src="images/profile_pic.webp" alt="">
+    <div>
+      Hi My name is Avi Arya Panwar. <br>
+      Curently pursuing B.tech from JSSATEN in Computer Science.<br>
+      And mind you I ❤️ Programming.
+
+    </div>
+  </div>
+
+
+
+  <div id="Projects-container"class="Projects-container filter-blur">
+    <p class="text-white">Current Projects</p>
+  </div>
+
+
+
+  <div id="Skill-container" class="Skills filter-blur" onclick="PreviousPage()">
+
+    <div class="Cloud-container">
+      <img style="left:100px; top:200px; " src="images/Cloud.png " alt="" class="cloud filter-blur">
+      <img style="left:380px; top:100px; animation-delay: 1.5s;" src="images/Cloud.png " alt=""
+        class="cloud filter-blur">
+      <img style="left:300px; top:300px; animation-delay: 5.5s;" src="images/Cloud.png" alt=""
+        class="cloud filter-blur">
+      <img style="left:200px; top:400px; animation-delay: 6.9s;" src="images/Cloud.png" alt=""
+        class="cloud filter-blur">
+    </div>
+
+    <div style="font-size:35px;"class="Skills-heading text-white">My Skills</div>
+
+
+
+    <div class="SkillCard ">
+      <img src="images/Web_dev_skillcard.jfif" alt="">
+      <p class="text-white">I am A Web Developper</p>
+    </div>
+    <div class="SkillCard ">
+      <img src="images/programming_skillcard.png" alt="">
+      <p class="text-white">Ohh yeah I am a programmer too</p>
+    </div>
+    <div class="SkillCard ">
+      <img src="images/youtube_skillcard.jfif" alt="" unselectable="on">
+      <p class="text-white">Ohh! Wait when i Became a youtuber?</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

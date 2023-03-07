@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(38, 38, 38);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 8px;
+
+}
+.gradient{
+   background: linear-gradient(to right, #f32170,
+        #ff6b08, #cf23cf);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+}
+nav{
+    background-color: rgb(198, 7, 137); border-radius: 12px; margin:0px 2px;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0), 0 0 0 2px rgba(255, 255, 255, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-track {
+    background-color: rgb(36, 35, 35);
+    border-radius:100vw;position:absolute;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(204, 2, 97);
+  border-radius: 5px;position:absolute;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(245, 5, 117);
+    border-radius: 5px;position:absolute;
+  }
+.Skill{
+    margin: 5px;
+
+}
+.Skill *{
+    margin: 15px;
+   
+}
+.Skill img{
+    width:20%; border-radius: 15px;
+}
+.nav-link{
+    position: relative;
+}
+.navbar-brand{
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+.navbar-brand::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    
+    height: 3px;
+    background-color: rgb(1, 0, 0);
+    border-radius: 3px;
+    bottom:0px;
+    transition: all 0.5s ease-in-out;
+}
+.navbar-brand:hover:before{
+   
+    width: 100%;
+
+}
+.nav-link::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    left:0px;
+    height: 3px;
+    background-color: rgb(1, 0, 0);
+    border-radius: 3px;
+    bottom:0px;
+    transition: all 0.5s ease-in-out;
+}
+.nav-link::after{
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 95%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0);
+    border-radius: 3px;
+    bottom:0px;
+    transition: all 0.5s ease-in-out;
+}
+.nav-link:hover:after{
+    position: absolute;
+    content: "";
+    left: 0px;
+    width: 95%;
+    height: 100%;
+    background-color: rgba(41, 41, 41, 0.226);
+    border-radius: 3px;
+    bottom:0px;
+    transition: all 0.5s ease-in-out;
+}
+.nav-link:hover:before{
+    position: absolute;
+    content: "";
+    left:0px;
+    width: 95%;
+    height: 3px;
+    background-color: rgb(1, 0, 0);
+    border-radius: 3px;
+    bottom:0px;
+}
